@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1040</width>
+    <height>826</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1040</width>
+    <height>826</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1040</width>
+    <height>826</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Credits</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="main_window">
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+	background-color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="secondary_window">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>331</width>
+         <height>811</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame {
+	background-color: rgb(33, 115, 70);
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="credits_text">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>50</y>
+          <width>161</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	border: none;
+	color:white;
+	font: 650 36pt &quot;Segoe UI&quot;;
+}</string>
+        </property>
+        <property name="text">
+         <string>Credits</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="author_text">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>150</y>
+          <width>251</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	border: none;
+	color:white;
+	font: 550 22pt &quot;Segoe UI&quot;;
+}</string>
+        </property>
+        <property name="text">
+         <string>Author: Fishappy0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="program_text">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>220</y>
+          <width>251</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	border: none;
+	color:white;
+	font: 550 22pt &quot;Segoe UI&quot;;
+}</string>
+        </property>
+        <property name="text">
+         <string>Program: Student </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="program_text_2">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>270</y>
+          <width>161</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	border: none;
+	color:white;
+	font: 550 22pt &quot;Segoe UI&quot;;
+}</string>
+        </property>
+        <property name="text">
+         <string>Randomizer</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="github_button">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>740</y>
+          <width>91</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border: 5px;
+	background-color: rgb(253, 253, 253);
+	font: 18pt &quot;Segoe UI&quot;;
+}
+QPushButton:hover {
+	background-color: rgb(211, 240, 224);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>GitHub</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="contact_button">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>740</y>
+          <width>101</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border: 5px;
+	background-color: rgb(253, 253, 253);
+	font: 18pt &quot;Segoe UI&quot;;
+}
+QPushButton:hover {
+	background-color: rgb(211, 240, 224);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Contact</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="license_button">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>740</y>
+          <width>81</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border: 5px;
+	background-color: rgb(253, 253, 253);
+	font: 18pt &quot;Segoe UI&quot;;
+}
+QPushButton:hover {
+	background-color: rgb(211, 240, 224);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>License</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="close_button">
+       <property name="geometry">
+        <rect>
+         <x>970</x>
+         <y>0</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: none;
+	font: 500 23pt &quot;Segoe UI&quot;;
+}
+QPushButton:hover{
+	background-color:rgb(235, 0, 0);
+	color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>X</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="minimize_button">
+       <property name="geometry">
+        <rect>
+         <x>920</x>
+         <y>0</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: none;
+	font: 100 38pt &quot;Segoe UI&quot;;
+}
+QPushButton:hover{
+	background-color: rgb(179, 179, 179)
+}</string>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="instruction_text">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>50</y>
+         <width>271</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	border: none;
+	color: rgb(33, 115, 70);
+	font: 650 36pt &quot;Segoe UI&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Instructions</string>
+       </property>
+      </widget>
+      <widget class="QTextBrowser" name="instruction_text_2">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>160</y>
+         <width>601</width>
+         <height>561</height>
+        </rect>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; text-decoration: underline; color:#217346;&quot;&gt;At The Main Menu&lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#217346;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#000000;&quot;&gt;Step 1) Select the import folder with all the excel files needed to be generated&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#000000;&quot;&gt;Step 2) Select the export destination folder&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#000000;&quot;&gt;Step 3) Generate !&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:16pt; color:#217346;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; text-decoration: underline; color:#217346;&quot;&gt;At The Generation Menu&lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#217346;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#000000;&quot;&gt;- The &lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#217346;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#217346;&quot;&gt;File Name&lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#217346;&quot;&gt;&amp;quot; &lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#000000;&quot;&gt;column shows the name of the files that are being processed&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#000000;&quot;&gt;- The&lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#217346;&quot;&gt; &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#217346;&quot;&gt;Status&lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#217346;&quot;&gt;&amp;quot; &lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#000000;&quot;&gt;column shows the status of the files that are being processed&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#000000;&quot;&gt;- The &lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#217346;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#217346;&quot;&gt;Re-run&lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#217346;&quot;&gt;&amp;quot; &lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#000000;&quot;&gt;button, deletes all the generated files and start the generation process again&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#000000;&quot;&gt;- The&lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#217346;&quot;&gt; &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#217346;&quot;&gt;Show Error&lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#217346;&quot;&gt;&amp;quot; &lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#000000;&quot;&gt;button, shows the list of files that had errors after the generation process&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:16pt; color:#217346;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:16pt; color:#217346;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; text-decoration: underline; color:#217346;&quot;&gt;Notes&lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#217346;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#000000;&quot;&gt;Information about files formatting can be found in the format instructions&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:16pt; color:#217346;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; text-decoration: underline; color:#217346;&quot;&gt;Video Instruction Link&lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#217346;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; font-size:16pt; text-decoration: underline; color:#1cc3ff;&quot;&gt;youtube.com&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="contact_button_2">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>740</y>
+         <width>431</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border: 5px;
+	background-color: rgb(33, 115, 70);
+	color: white;
+	font: 550 22pt &quot;Segoe UI&quot;;
+}
+QPushButton:hover {
+	background-color: rgb(49, 173, 105);
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>See format instructions</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

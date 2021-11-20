@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Generating</class>
+ <widget class="QMainWindow" name="Generating">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1038</width>
+    <height>818</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1038</width>
+    <height>818</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1038</width>
+    <height>818</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Generating</string>
+  </property>
+  <widget class="QWidget" name="main_frame">
+   <property name="minimumSize">
+    <size>
+     <width>1038</width>
+     <height>818</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1038</width>
+     <height>818</height>
+    </size>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="main_window">
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+	background-color: rgb(33, 115, 70);
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="secondary_window">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>260</y>
+         <width>1021</width>
+         <height>541</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>1021</width>
+         <height>541</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>1021</width>
+         <height>541</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame{
+	background-color: rgb(255, 255, 255);
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QTableView" name="file_list_box">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>90</y>
+          <width>291</width>
+          <height>321</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QTableView" name="status_list_box">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>90</y>
+          <width>551</width>
+          <height>321</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="cancel_button">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>440</y>
+          <width>241</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border: 5px;
+	background-color: rgb(33, 115, 70);
+	color: white;
+	font: 550 22pt &quot;Segoe UI&quot;;
+}
+QPushButton:hover {
+	background-color: rgb(49, 173, 105);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Return to menu</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="rerun_button">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>440</y>
+          <width>171</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border: 5px;
+	background-color: rgb(33, 115, 70);
+	color: white;
+	font: 550 22pt &quot;Segoe UI&quot;;
+}
+QPushButton:hover {
+	background-color: rgb(49, 173, 105);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Re-Run</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="rerun_button_2">
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>440</y>
+          <width>171</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border: 5px;
+	background-color: rgb(33, 115, 70);
+	color: white;
+	font: 550 22pt &quot;Segoe UI&quot;;
+}
+QPushButton:hover {
+	background-color: rgb(49, 173, 105);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Show Errors</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="status_text_box">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>30</y>
+          <width>551</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	background-color: rgb(33, 115, 70);
+	color: white;
+	border-style: none;
+	align: center;
+	font: 550 22px &quot;Segoe UI&quot;;
+}</string>
+        </property>
+        <property name="text">
+         <string>Status</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="file_text_box">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>30</y>
+          <width>291</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	background-color: rgb(33, 115, 70);
+	color: white;
+	border-style: none;
+	align: center;
+	font: 550 22px &quot;Segoe UI&quot;;
+}</string>
+        </property>
+        <property name="text">
+         <string>File Name</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QProgressBar" name="progress_bar">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>140</y>
+         <width>461</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+	background-color: rgb(236, 236, 236);
+	color: rgb(88, 88, 88);
+	border-style: none;
+	text-align: center;
+	font: 500 20px &quot;Segoe UI&quot;;
+}
+QProgressBar::chunk{
+	border: none;
+	qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(210, 254, 210, 255), stop:0.943182 rgba(8, 182, 86, 254));
+}</string>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="close">
+       <property name="geometry">
+        <rect>
+         <x>960</x>
+         <y>0</y>
+         <width>61</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: none;
+color: white;
+	font: 500 23pt &quot;Segoe UI&quot;;
+}
+QPushButton:hover{
+	background-color:rgb(235, 0, 0);
+	color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>X</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="minimize">
+       <property name="geometry">
+        <rect>
+         <x>910</x>
+         <y>0</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: none;
+	color:white;
+	font: 100 38pt &quot;Segoe UI&quot;;
+}
+QPushButton:hover{
+	background-color: rgb(130, 198, 164);
+}</string>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>30</y>
+         <width>371</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	border: none;
+	color:white;
+	font: 650 36pt &quot;Segoe UI&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Generating Files</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

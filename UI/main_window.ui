@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>student_randomizer_main</class>
+ <widget class="QMainWindow" name="student_randomizer_main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1028</width>
+    <height>462</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1028</width>
+    <height>462</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1028</width>
+    <height>462</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Student Randomizer</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	border: none;
+	color: rgb(255, 255, 255);
+}</string>
+  </property>
+  <widget class="QWidget" name="main_frame">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="main_window">
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+	background-color:rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="secondary_window">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>139</y>
+         <width>1011</width>
+         <height>311</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame{
+	background-color: rgb(33, 115, 70);
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLineEdit" name="import_text_box">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>50</y>
+          <width>511</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+	border: none;
+	padding-left: 15px;
+	color: rgb(102, 102, 102);
+	font: 18pt &quot;Segoe UI&quot;;
+}
+QLineEdit:hover {
+	background-color: rgb(211, 240, 224);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>./import</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="export_text_box">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>140</y>
+          <width>511</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+	border: none;
+	padding-left: 15px;
+	color: rgb(102, 102, 102);
+	font: 18pt &quot;Segoe UI&quot;;
+}
+QLineEdit:hover {
+	background-color: rgb(211, 240, 224);
+}</string>
+        </property>
+        <property name="text">
+         <string>./export</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="import_button">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>50</y>
+          <width>101</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border: 5px;
+	background-color: rgb(233, 233, 233);
+	color: rgb(110, 110, 110);
+	font: 18pt &quot;Segoe UI&quot;;
+}
+QPushButton:hover {
+	background-color: rgb(211, 240, 224);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Browse</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="export_button">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>140</y>
+          <width>101</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border: 5px;
+	background-color: rgb(233, 233, 233);
+	color: rgb(110, 110, 110);
+	font: 18pt &quot;Segoe UI&quot;;
+}
+QPushButton:hover {
+	background-color: rgb(211, 240, 224);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Browse</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="generate_button">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>200</y>
+          <width>271</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border: 5px;
+	background-color: rgb(253, 253, 253);
+	font: 18pt &quot;Segoe UI&quot;;
+}
+QPushButton:hover {
+	background-color: rgb(211, 240, 224);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Generate</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="import_title">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>50</y>
+          <width>231</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	border: none;
+	color:white;
+	font: 550 22pt &quot;Segoe UI&quot;;
+}</string>
+        </property>
+        <property name="text">
+         <string>Import Directory</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="export_title">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>140</y>
+          <width>221</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	border: none;
+	color:white;
+	font: 550 22pt &quot;Segoe UI&quot;;
+}</string>
+        </property>
+        <property name="text">
+         <string>Export Directory</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="minimize">
+       <property name="geometry">
+        <rect>
+         <x>910</x>
+         <y>0</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: none;
+	font: 100 38pt &quot;Segoe UI&quot;;
+}
+QPushButton:hover{
+	background-color: rgb(179, 179, 179)
+}</string>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="close">
+       <property name="geometry">
+        <rect>
+         <x>960</x>
+         <y>0</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: none;
+	font: 500 23pt &quot;Segoe UI&quot;;
+}
+QPushButton:hover{
+	background-color:rgb(235, 0, 0);
+	color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>X</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="minimize_2">
+       <property name="geometry">
+        <rect>
+         <x>860</x>
+         <y>0</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: none;
+	font: 500 22pt &quot;Segoe UI&quot;;
+}
+QPushButton:hover{
+	background-color: rgb(179, 179, 179)
+}</string>
+       </property>
+       <property name="text">
+        <string>?</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="title_1">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>40</y>
+         <width>171</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	border: none;
+	color: rgb(33, 115, 70);
+	font: 450 36pt &quot;Segoe UI&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Student</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="title_2">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>40</y>
+         <width>281</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	border: none;
+	color: rgb(33, 115, 70);
+	font: 650 36pt &quot;Segoe UI&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Randomizer</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
